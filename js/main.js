@@ -165,8 +165,8 @@ function update_plot_data(additional_plot_data) {
     }
     plot_data = updated_plot_data;
 
-    datapart = [ { label: "transaction", data: transaction_plot, color: 1 }
-               , { label: "block", data: block_plot, color: 0 }
+    datapart = [ { label: "Transaction", data: transaction_plot, color: 1 }
+               , { label: "Block", data: block_plot, color: 0 }
                ];
 }
 
