@@ -1,0 +1,23 @@
+.col1, .col2, .col3, .col4, .cols {float:left}
+.col {width:615px;float:right;padding-right:45px;padding-top:18px}
+.col5 {width:615px;float:right;padding-right:45px;padding-top:0px}
+.col1 {padding-left:50px;width:280px}
+.col2 {padding-left:50px;width:510px}
+.col3 {}
+.col4 {width:277px;padding-left:30px}
+.cols {width:226px}
+/* index.html */
+#page1 .body1 {background:url(/static/images/bg_top.gif) top repeat-x #fff}
+#page1 .body2 {background:url(/static/images/bg_top_img_monitor.jpg) top center no-repeat}
+#page1 h1 {padding:31px 0 0 217px}
+#page1 #search {padding:67px 50px 0 0}
+#page1 #menu {padding:32px 27px 0 0}
+#page1 h2 {padding:42px 0 21px 0}
+#page1 header {padding-bottom:33px}
+/* index-1.html */
+/* index-2.html */
+/* index-3.html */
+/* index-4.html */
+#page5 .cols {width:90px}
+/* index-5.html */
+/* index-6.html */

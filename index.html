@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bitcoin Monitor</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ static_url('css/reset.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ static_url('css/layout.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ static_url('css/style.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ static_url('css/ui-lightness/jquery-ui.css') }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ static_url('css/btcqrcode.css') }}" type="text/css" media="all">
+</head>
+<body id="page1">
+<div class="body1">
+    <div class="body2">
+        <div class="main">
+<!-- header -->
+            <header>
+                <div class="wrapper">
+                    <h1><a href="http://www.bitcoinmonitor.com" id="logo">Bitcoin Monitor</a></h1>
+                    <div id="search"></div>
+                </div>
+                <div class="wrapper">
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="http://www.bitcoinmonitor.com">Home</a></li>
+                            <li><a href="{{ static_url('faq.html') }}">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="wrapper">
+                    <div class="col">
+                        <a href="http://www.bitcoin.org/">Bitcoin</a> is a p2p-based digital currency. This website visualizes
+                        the activities on the Bitcoin network: Coins being moved around (transactions), recording and
+                        tamper-proofing the history of events (block creation) and exchanges with other currencies taking place (currency trade).
+                    </div>
+                </div>
+            </header>
+<!-- / header -->
+<!-- content -->
+            <section id="content">
+                    <div id="placeholder" style="width:750px;height:350px"></div>
+
+                    <div id="slider_box">
+                        <div id="slider_inner_box">
+                            <div id="slider"></div>
+                            <div id="slider_value">3 minutes</div>
+                        </div>
+                    </div>
+
+                    <p class="clear"></p>
+
+                    <p id="status">Please note: The site is currently experiencing technical difficulties <br />
+                    regarding the Bitcoin daemon. This should be fixed soon.</p>
+
+                    <p id="donate">Find the Bitcoin Monitor useful? Please consider supporting the project<br />with a donation to
+                    <a href="bitcoin:14Z1mazY4HfysZyMaKudFr63EwHqQT2njz">14Z1mazY4HfysZyMaKudFr63EwHqQT2njz</a>
+                    <span class="qrcode_wrapper">
+                        <a href="{{ static_url('images/14Z1mazY4HfysZyMaKudFr63EwHqQT2njz.png') }}"><img src="{{ static_url('images/icon_qrcode.png') }}" alt="QR code icon"></a>
+                        <img class="qrcode" src="{{ static_url('images/14Z1mazY4HfysZyMaKudFr63EwHqQT2njz.png') }}" alt="QR code">
+                    </span>
+                     - thanks!</p>
+
+
+                    <div id="ad">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- Bitcoinmonitor -->
+                        <ins class="adsbygoogle"
+                             style="display:inline-block;width:728px;height:90px"
+                             data-ad-client="ca-pub-8874758333415673"
+                             data-ad-slot="5110195195"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                    </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="body3">
+    <div class="main">
+<!-- footer -->
+        <footer>
+            <div id="footer">
+                &copy;2011-2013 <a href="mailto:jan@uos.de">Jan Vornberger</a> |
+                <a href="bitcoin:14Z1mazY4HfysZyMaKudFr63EwHqQT2njz">14Z1mazY4HfysZyMaKudFr63EwHqQT2njz</a>
+                <span class="qrcode_wrapper">
+                    <a href="{{ static_url('images/14Z1mazY4HfysZyMaKudFr63EwHqQT2njz.png') }}"><img src="{{ static_url('images/icon_qrcode.png') }}" alt="QR code icon"></a>
+                    <img class="qrcode" src="{{ static_url('images/14Z1mazY4HfysZyMaKudFr63EwHqQT2njz.png') }}" alt="QR code">
+                </span>
+                | Design by <a href="http://www.templatemonster.com/" target="_blank">TemplateMonster.com</a>
+            </div>
+        </footer>
+<!-- / footer -->
+    </div>
+</div>
+
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="{{ static_url('ie_html5.js') }}"></script><![endif]-->
+<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="{{ static_url('excanvas.min.js') }}"></script><![endif]-->
+<script language="javascript" type="text/javascript" src="{{ static_url('jquery.min.js') }}"></script>
+<script language="javascript" type="text/javascript" src="{{ static_url('jquery-ui.min.js') }}"></script>
+<script language="javascript" type="text/javascript" src="{{ static_url('jquery.flot.min.js') }}"></script>
+<script language="javascript" type="text/javascript" src="{{ static_url('heartbeat.js') }}"></script>
+<script language="javascript" type="text/javascript" src="{{ static_url('btcqrcode.js') }}"></script>
+<script language="javascript" type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21178857-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+</body>
+</html>

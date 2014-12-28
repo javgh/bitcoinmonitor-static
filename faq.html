@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bitcoin Monitor - FAQ</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/static/css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/static/css/btcqrcode.css" type="text/css" media="all">
+    <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="/static/ie_html5.js"></script><![endif]-->
+    <script language="javascript" type="text/javascript" src="/static/jquery.min.js"></script>
+    <script language="javascript" type="text/javascript" src="/static/btcqrcode.js"></script>
+    <script language="javascript" type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21178857-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body id="page1">
+<div class="body1">
+	<div class="body2">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+					<h1><a href="/" id="logo">Bitcoin Monitor</a></h1>
+                    <div id="search"></div>
+				</div>
+				<div class="wrapper">
+					<nav>
+						<ul id="menu">
+							<li><a href="/">Home</a></li>
+							<li><a href="/static/faq.html">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="wrapper">
+					<div class="col5">
+                        <h2>FAQ</h2>
+					</div>
+				</div>
+			</header>
+<!-- / header -->
+<!-- content -->
+			<section id="content">
+                <div id="faq">
+                    <p><em>Q:</em> What is Bitcoin?<br>
+                    <em>A:</em> Bitcoin is a peer-to-peer, network-based digital currency.
+                    There is no central authority to issue new money or keep
+                    track of transactions. These tasks are managed collectively by the
+                    nodes of the network. To learn more, visit <a href="http://www.bitcoin.org">bitcoin.org</a> (official site)
+                    or watch a short video on <a href="http://www.weusecoins.com/">weusecoins.com</a>.
+                    </p>
+
+                    <p><em>Q:</em> What is the Bitcoin Monitor?<br>
+                    <em>A:</em> The Bitcoin Monitor visualizes the events on the Bitcoin network
+                       as they are happening: Transactions move Bitcoins around between
+                       different addresses and blocks create a small amount of new Bitcoins
+                       and in the process confirm previous transactions. Additionally,
+                       trade data from markets - kindly provided by
+                       <a href="http://bitcoincharts.com/">Bitcoin Charts</a> -
+                       is included to show the interaction with other currencies.
+                    </p>
+
+                    <p><em>Q:</em> Is this an accurate history of the Bitcoin network?<br>
+                    <em>A:</em> Not necessarily. The Bitcoin Monitor plots new transactions as soon as
+                    they spread through the network. If they should later become invalid -
+                    maybe through an attempted double-spend - and rejected from the nodes
+                    of the network, this 'rewriting' of history will currently not be
+                    accounted for on the chart. In practice, almost all transactions are
+                    valid though.
+                    </p>
+
+                    <p><em>Q:</em> Why do transactions often consist of multiple components?<br>
+                    <em>A:</em> Transactions move Bitcoins from a number of source addresses to a number
+                    of destination addresses. Usually one of the destination addresses belongs
+                    to the person performing the transaction, so the Bitcoins transferred there
+                    are often referred to as 'change'. This mechanism helps to increase the
+                    anonymity of transactions and as such there is no straightforward way to
+                    detect which component is the 'change'. The Bitcoin Monitor therefore simply
+                    plots the total amount and lists all components.
+                    </p>
+                </div>
+			</section>
+		</div>
+	</div>
+</div>
+<div class="body3">
+	<div class="main">
+<!-- footer -->
+		<footer>
+			<div id="footer">
+                &copy;2011-2013 <a href="mailto:jan@uos.de">Jan Vornberger</a> |
+                <a href="bitcoin:14Z1mazY4HfysZyMaKudFr63EwHqQT2njz">14Z1mazY4HfysZyMaKudFr63EwHqQT2njz</a>
+                <span class="qrcode_wrapper">
+                    <a href="/static/images/14Z1mazY4HfysZyMaKudFr63EwHqQT2njz.png"><img src="/static/images/icon_qrcode.png" alt="QR code icon"></a>
+                    <img class="qrcode" src="/static/images/14Z1mazY4HfysZyMaKudFr63EwHqQT2njz.png" alt="QR code">
+                </span>
+                | Design by <a href="http://www.templatemonster.com/" target="_blank">TemplateMonster.com</a>
+			</div>
+		</footer>
+<!-- / footer -->
+	</div>
+</div>
+</body>
+</html>
